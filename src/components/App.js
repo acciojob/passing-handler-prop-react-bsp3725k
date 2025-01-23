@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div id="master">
-      <h1 className="heading">{title}</h1>
+      <p className="heading">{title}</p>
 
       <div className="row">
         {colourConfig.map((config) => (
