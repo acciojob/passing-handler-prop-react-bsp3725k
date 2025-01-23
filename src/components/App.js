@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import '../styles/App.css';
 import Selection from './Selection';
@@ -31,10 +32,10 @@ const App = () => {
 
   return (
     <div id="master">
-      <h5 className="heading">{/* display title here */}</h5>
+      <h1 className="heading">{title}</h1>
 
       <div className="row">
-        {colourConfig.map((config, index) => (
+        {colourConfig.map((config) => (
           <ColourSelector key={config.key} config={config} selectNextBackground={selectNextBackground} />
         ))}
       </div>
